@@ -5,7 +5,7 @@ custom:
     title: Avoiding Side Effects in Complex Environments
     github:
       is_project_page: true
-      repository_url: https://github.com/neale/safelife-k2
+      repository_url: https://github.com/neale/avoiding-side-effects
     publications:
       show_paper: true
       paper_url: https://arxiv.org/abs/2006.06547
