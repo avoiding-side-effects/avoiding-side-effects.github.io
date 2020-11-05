@@ -40,7 +40,7 @@ In Conway's Game of Life, cells are alive or dead. Depending on how many live ne
 
 As the environment only rewards pruning red cells or creating gray cells in blue tiles, unpenalized RL agents often make a mess of the green cells (as shown above). The agent should "leave a small footprint" by not disturbing unrelated parts of the state, such as the green cells. Roughly, SafeLife measures side effects as the degree to which the agent disturbs green cells.
 
-For each of the four following tasks, we randomly generate four curricula of 8 levels each. For each curriculum, we randomly sample a test-time trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see our paper.
+For each of the four following tasks, we randomly generate four curricula of 8 levels each. For two runs from each task, we sample a trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see [our paper](https://arxiv.org/abs/2006.06547).
 
 ## prune-still-easy
 
