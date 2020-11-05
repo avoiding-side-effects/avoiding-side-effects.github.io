@@ -1,3 +1,22 @@
+<!-- Primary Meta Tags -->
+<title>Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.</title>
+<meta name="title" content="Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.">
+<meta name="description" content="Making agents behave with an unsupervised penalty term.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://avoiding-side-effects.github.io/">
+<meta property="og:title" content="Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.">
+<meta property="og:description" content="Making agents behave with an unsupervised penalty term.">
+<meta property="og:image" content="assets/img/aup-neurips.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://avoiding-side-effects.github.io/">
+<meta property="twitter:title" content="Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.">
+<meta property="twitter:description" content="Making agents behave with an unsupervised penalty term.">
+<meta property="twitter:image" content="assets/img/aup-neurips.png">
+
 ---
 layout: default
 custom:
