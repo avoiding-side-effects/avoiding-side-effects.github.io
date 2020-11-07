@@ -27,6 +27,7 @@ custom:
 <meta property="twitter:image" content="assets/img/aup-neurips.png">
 </head>
 
+<body>
 Reward function specification can be difficult, even in simple environments. Rewarding the agent for making a widget may be easy, but penalizing the multitude of possible negative side effects is hard. [In toy environments](https://arxiv.org/abs/1902.09725), Attainable Utility Preservation (AUP) avoided side effects by penalizing shifts in the ability to achieve randomly generated goals. We scale this approach to large, randomly generated environments based on Conway's Game of Life. By preserving optimal value for a single randomly generated reward function, AUP incurs modest overhead while leading the agent to complete the specified task and avoid side effects.
 
 # Experiments
@@ -76,5 +77,6 @@ The agent is rewarded for creating gray cells on light blue tiles. After enough 
 
 <p align="left">
     <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
-        <source src="assets/videos/append_spawn_trajectories.mp4"></video>
+        <source src="assets/videos/append_spawn_trajectories.mp4" type="video/mp4"></video>
 </p>
+</body>
