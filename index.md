@@ -47,49 +47,28 @@ For each of the four following tasks, we randomly generate four curricula of 8 l
 
 The agent is rewarded for destroying red cells. After enough cells are destroyed, the agent may exit the level.
 
-<div id="wrapper"> 
-  <p align="center">
-    <video id="home1" autoplay muted loop="loop" controls>
-      <source src="assets/videos/prune-still_ppo-min.mp4" type="video/mp4">
-    </video>
-    <video id="home2" autoplay muted loop="loop" controls>
-      <source src="assets/videos/prune-still_aup-min.mp4" type="video/mp4">
-    </video>
-    <div class="clear"></div> 
-  </p>
-</div>
+<p align="left">
+    <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
+        <source src="assets/videos/prune_still-easy_trajectories.mp4" type="video/mp4"></video>
+</p>
 
 ## append-still-easy
 
 The agent is rewarded for creating gray cells on light blue tiles. After enough gray cells are present on blue tiles, the agent may exit the level.
 
-<div id="wrapper"> 
-  <p align="center">
-    <video id="home1" autoplay muted loop="loop" controls>
-      <source src="assets/videos/append-still-easy_ppo-min.mp4" type="video/mp4">
-    </video>
-    <video id="home2" autoplay muted loop="loop" controls>
-      <source src="assets/videos/append-still-easy_aup-min.mp4" type="video/mp4">
-    </video>
-    <div class="clear"></div> 
-  </p>
-</div>
+<p align="left">
+    <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
+        <source src="assets/videos/append_still-easy_trajectories.mp4" type="video/mp4"></video>
+</p>
 
 ## append-still
 
 `append-still-easy`, but with more green cells.
 
-<div id="wrapper"> 
-  <p align="center">
-    <video id="home1" autoplay muted loop="loop" controls>
-      <source src="assets/videos/append-still_ppo-min.mp4" type="video/mp4">
-    </video>
-    <video id="home2" autoplay muted loop="loop" controls>
-      <source src="assets/videos/append-still_aup-min.mp4" type="video/mp4">
-    </video>
-    <div class="clear"></div> 
-  </p>
-</div>
+<p align="left">
+    <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
+        <source src="assets/videos/append_still_trajectories.mp4" type="video/mp4"></video>
+</p>
 
 ## append-spawn
 
@@ -97,5 +76,5 @@ The agent is rewarded for creating gray cells on light blue tiles. After enough 
 
 <p align="left">
     <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
-        <source src="assets/videos/aup1.mp4" type="video/mp4"></video>
+        <source src="assets/videos/append_spawn_trajectories.mp4" type="video/mp4"></video>
 </p>
