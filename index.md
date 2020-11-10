@@ -5,14 +5,27 @@ custom:
     title: Avoiding Side Effects in Complex Environments
     github:
       is_project_page: true
-      repository_url: https://github.com/neale/safelife-k2
+      repository_url: https://github.com/neale/avoiding-side-effects
     publications:
       show_paper: true
       paper_url: https://arxiv.org/abs/2006.06547
     authors: Alex Turner & Neale Ratzlaff, Prasad Tadepalli
 ---
+<head>
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://avoiding-side-effects.github.io/">
+<meta property="og:title" content="Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.">
+<meta property="og:description" content="Making agents behave with an unsupervised penalty term.">
+<meta property="og:image" content="assets/img/aup-neurips.png">
 
-# Abstract
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://avoiding-side-effects.github.io/">
+<meta property="twitter:title" content="Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.">
+<meta property="twitter:description" content="Making agents behave with an unsupervised penalty term.">
+<meta property="twitter:image" content="assets/img/aup-neurips.png">
+</head>
 
 Reward function specification can be difficult, even in simple environments. Rewarding the agent for making a widget may be easy, but penalizing the multitude of possible negative side effects is hard. [In toy environments](https://arxiv.org/abs/1902.09725), Attainable Utility Preservation (AUP) avoided side effects by penalizing shifts in the ability to achieve randomly generated goals. We scale this approach to large, randomly generated environments based on Conway's Game of Life. By preserving optimal value for a single randomly generated reward function, AUP incurs modest overhead while leading the agent to complete the specified task and avoid side effects.
 
@@ -28,55 +41,34 @@ In Conway's Game of Life, cells are alive or dead. Depending on how many live ne
 
 As the environment only rewards pruning red cells or creating gray cells in blue tiles, unpenalized RL agents often make a mess of the green cells (as shown above). The agent should "leave a small footprint" by not disturbing unrelated parts of the state, such as the green cells. Roughly, SafeLife measures side effects as the degree to which the agent disturbs green cells.
 
-For each of the four following tasks, we randomly generate five curricula of 8 levels each. For each curriculum, we randomly sample a test-time trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see our paper.
+For each of the four following tasks, we randomly generate four curricula of 8 levels each. For two runs from each task, we sample a trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see [our paper](https://arxiv.org/abs/2006.06547).
 
 ## prune-still-easy
 
 The agent is rewarded for destroying red cells. After enough cells are destroyed, the agent may exit the level.
 
-<div id="wrapper"> 
-  <p align="center">
-    <video id="home1" autoplay muted loop="loop" controls>
-      <source src="assets/videos/prune-still_ppo-min.mp4" type="video/mp4">
-    </video>
-    <video id="home2" autoplay muted loop="loop" controls>
-      <source src="assets/videos/prune-still_aup-min.mp4" type="video/mp4">
-    </video>
-    <div class="clear"></div> 
-  </p>
-</div>
+<p align="left">
+    <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
+        <source src="assets/videos/prune.mp4" type="video/mp4"></video>
+</p>
 
 ## append-still-easy
 
 The agent is rewarded for creating gray cells on light blue tiles. After enough gray cells are present on blue tiles, the agent may exit the level.
 
-<div id="wrapper"> 
-  <p align="center">
-    <video id="home1" autoplay muted loop="loop" controls>
-      <source src="assets/videos/append-still-easy_ppo-min.mp4" type="video/mp4">
-    </video>
-    <video id="home2" autoplay muted loop="loop" controls>
-      <source src="assets/videos/append-still-easy_aup-min.mp4" type="video/mp4">
-    </video>
-    <div class="clear"></div> 
-  </p>
-</div>
+<p align="left">
+    <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
+        <source src="assets/videos/appEasy.mp4" type="video/mp4"></video>
+</p>
 
 ## append-still
 
 `append-still-easy`, but with more green cells.
 
-<div id="wrapper"> 
-  <p align="center">
-    <video id="home1" autoplay muted loop="loop" controls>
-      <source src="assets/videos/append-still_ppo-min.mp4" type="video/mp4">
-    </video>
-    <video id="home2" autoplay muted loop="loop" controls>
-      <source src="assets/videos/append-still_aup-min.mp4" type="video/mp4">
-    </video>
-    <div class="clear"></div> 
-  </p>
-</div>
+<p align="left">
+    <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
+        <source src="assets/videos/appStill.mp4" type="video/mp4"></video>
+</p>
 
 ## append-spawn
 
@@ -84,5 +76,5 @@ The agent is rewarded for creating gray cells on light blue tiles. After enough 
 
 <p align="left">
     <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
-        <source src="assets/videos/aup1.mp4" type="video/mp4"></video>
+        <source src="assets/videos/appSpawn.mp4" type="video/mp4"></video>
 </p>

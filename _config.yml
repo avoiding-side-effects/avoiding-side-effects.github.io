@@ -6,4 +6,3 @@ repo_url: https://github.com/neale/safelife-k2
 permalink: https://github.com/neale/safelife-k2
 plugins:
   - 'jekyll-github-metadata'
-port: 4001
