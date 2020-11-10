@@ -354,12 +354,33 @@ a:hover {
 
 /* green: 33cb33 blue: 7F7FE5 flat: 2295BB linear-gradient(120deg, #cb3333, #7f7fe5)*/
 
+/* .page-header .behind_container {
+  /* background-image: linear-gradient(120deg, #cb3333, #7f7fe5);
+  position: relative;
+  top: -18px;
+  text-align: center;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 25%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: linear-gradient(120deg, #cb3333, #7f7fe5);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+} */
+
 .page-header {
   color: #fff;
   text-align: center;
   background-color: #1771aa;
   background-image: linear-gradient(120deg, #cb3333, #7f7fe5);
 }
+
 @media screen and (min-width: 64em) {
   .page-header {
     padding: 5rem 6rem;
@@ -631,40 +652,40 @@ a:hover {
   color: #819198;
 }
 
-#wrapper { 
-    width: 832px; 
-    height: auto; 
-    margin: 0 auto;
-} 
-#home1 { 
-    width: 47.5%; 
-    height: width; 
-    /* float: left;  */
-} 
-
-#home2 { 
-    width: 47.5%; 
-    height: width; 
-    /* float: left;  */
+#wrapper {
+  width: 832px;
+  height: auto;
+  margin: 0 auto;
+}
+#home1 {
+  width: 47.5%;
+  height: width;
+  /* float: left;  */
 }
 
-.clear{
-    clear: both;
+#home2 {
+  width: 47.5%;
+  height: width;
+  /* float: left;  */
 }
 
-@media (max-width:767px) {
-    #wrapper{
-        width: 100%;
-        height: auto;
-    }
-    #home1 {
-        width: 100%;
-        height: auto;
-        float: none;
-    }
-    #home2 {
-        width: 100%;
-        height: auto;
-        float: none;
-    }
+.clear {
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  #wrapper {
+    width: 100%;
+    height: auto;
+  }
+  #home1 {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  #home2 {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
 }
