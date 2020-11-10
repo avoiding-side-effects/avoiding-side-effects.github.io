@@ -49,7 +49,7 @@ The agent is rewarded for destroying red cells. After enough cells are destroyed
 
 <p align="left">
     <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
-        <source src="assets/videos/prune.mp4" type="video/mp4"></video>
+        <source src="https://github.com/avoiding-side-effects/avoiding-side-effects.github.io/tree/master/assets/videos/prune.mp4" type="video/mp4"></video>
 </p>
 
 ## append-still-easy
