@@ -49,7 +49,7 @@ The agent is rewarded for destroying red cells. After enough cells are destroyed
 
 <p align="left">
     <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
-        <source src="https://github.com/avoiding-side-effects/avoiding-side-effects.github.io/tree/master/assets/videos/prune_still-easy_trajectories.mp4" type="video/mp4"></video>
+        <source src="assets/videos/prune_still-easy_trajectories.mp4" type="video/mp4"></video>
 </p>
 
 ## append-still-easy
@@ -58,7 +58,7 @@ The agent is rewarded for creating gray cells on light blue tiles. After enough 
 
 <p align="left">
     <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
-        <source src="assets/videos/appEasy.mp4" type="video/mp4"></video>
+        <source src="assets/videos/append_still-easy_trajectories.mp4" type="video/mp4"></video>
 </p>
 
 ## append-still
@@ -67,7 +67,7 @@ The agent is rewarded for creating gray cells on light blue tiles. After enough 
 
 <p align="left">
     <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
-        <source src="assets/videos/appStill.mp4" type="video/mp4"></video>
+        <source src="assets/videos/append_still_trajectories.mp4" type="video/mp4"></video>
 </p>
 
 ## append-spawn
@@ -76,5 +76,5 @@ The agent is rewarded for creating gray cells on light blue tiles. After enough 
 
 <p align="left">
     <video style="width:100%; height:50%;" autoplay muted loop="loop" controls>
-        <source src="assets/videos/appSpawn.mp4" type="video/mp4"></video>
+        <source src="assets/videos/append_spawn_trajectories.mp4" type="video/mp4"></video>
 </p>
