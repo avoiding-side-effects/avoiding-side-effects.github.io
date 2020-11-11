@@ -28,7 +28,7 @@ As the environment only rewards pruning red cells or creating gray cells in blue
 
 For each of the four following tasks, we randomly generate four curricula of 8 levels each. For two runs from each task, we sample a trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see [our paper](https://arxiv.org/abs/2006.06547). 
 
-Since these results weren't cherry-picked, sometimes AUP ends up looking a little silly! Even so, AUP undoubtably does better than the baseline on average.
+These results weren't cherry-picked, but they demonstrate how AUP tends to significantly reduce side effects.
 
 ## prune-still-easy
 
