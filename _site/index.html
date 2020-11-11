@@ -6,23 +6,21 @@
     <meta charset="UTF-8">
 
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Abstract | Avoiding Side Effects in Complex Environments</title>
+<title>Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Abstract" />
+<meta property="og:title" content="Avoiding Side Effects in Complex Environments" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Making agents behave with an unsupervised penalty term." />
 <meta property="og:description" content="Making agents behave with an unsupervised penalty term." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Avoiding Side Effects in Complex Environments" />
 <script type="application/ld+json">
-{"headline":"Abstract","description":"Making agents behave with an unsupervised penalty term.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/aup.png"}},"@type":"WebSite","url":"http://localhost:4000/","name":"Avoiding Side Effects in Complex Environments","@context":"https://schema.org"}</script>
+{"headline":"Avoiding Side Effects in Complex Environments","description":"Making agents behave with an unsupervised penalty term.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/aup.png"}},"@type":"WebSite","url":"/","name":"Avoiding Side Effects in Complex Environments","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=77eed78821787b60f69dc61367b32efba6df0c5f">
+    <link rel="stylesheet" href="/assets/css/style.css?v=8314c86d09c6bd54e21b7aed230ad7a4a4b81427">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://avoiding-side-effects.github.io/">
     <meta property="og:title" content="Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.">
@@ -46,7 +44,7 @@
         <a class="author" href="https://www.linkedin.com/in/alexandermattturner">Alex Turner</a> & <a class="author" href="https://neale.github.io/">Neale Ratzlaff</a>, <a class="author" href="http://web.engr.oregonstate.edu/~tadepall/">Prasad Tadepalli</a>
       </h2>
       
-        <a href="https://github.com/neale/safelife-k2" class="btn">View on GitHub</a>
+        <a href="https://github.com/neale/avoiding-side-effects" class="btn">View on GitHub</a>
       
       
         <a href="https://arxiv.org/abs/2006.06547" class="btn">Read the Paper</a>
@@ -54,9 +52,7 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h1 id="abstract">Abstract</h1>
-
-<p>Reward function specification can be difficult, even in simple environments. Rewarding the agent for making a widget may be easy, but penalizing the multitude of possible negative side effects is hard. <a href="https://arxiv.org/abs/1902.09725">In toy environments</a>, Attainable Utility Preservation (AUP) avoided side effects by penalizing shifts in the ability to achieve randomly generated goals. We scale this approach to large, randomly generated environments based on Conway’s Game of Life. By preserving optimal value for a single randomly generated reward function, AUP incurs modest overhead while leading the agent to complete the specified task and avoid side effects.</p>
+      <p>Reward function specification can be difficult, even in simple environments. Rewarding the agent for making a widget may be easy, but penalizing the multitude of possible negative side effects is hard. <a href="https://arxiv.org/abs/1902.09725">In toy environments</a>, Attainable Utility Preservation (AUP) avoided side effects by penalizing shifts in the ability to achieve randomly generated goals. We scale this approach to large, randomly generated environments based on Conway’s Game of Life. By preserving optimal value for a single randomly generated reward function, AUP incurs modest overhead while leading the agent to complete the specified task and avoid side effects.</p>
 
 <h1 id="experiments">Experiments</h1>
 
@@ -70,7 +66,7 @@
 
 <p>As the environment only rewards pruning red cells or creating gray cells in blue tiles, unpenalized RL agents often make a mess of the green cells (as shown above). The agent should “leave a small footprint” by not disturbing unrelated parts of the state, such as the green cells. Roughly, SafeLife measures side effects as the degree to which the agent disturbs green cells.</p>
 
-<p>For each of the four following tasks, we randomly generate five curricula of 8 levels each. For each curriculum, we randomly sample a test-time trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see our paper.</p>
+<p>For each of the four following tasks, we randomly generate four curricula of 8 levels each. For two runs from each task, we sample a trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see <a href="https://arxiv.org/abs/2006.06547">our paper</a>.</p>
 
 <h2 id="prune-still-easy">prune-still-easy</h2>
 
