@@ -2,22 +2,36 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
     <meta charset="UTF-8">
 
+    {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <meta property="og:title" content="Avoiding Side Effects">
-    <meta property="og:description" content="Making agents behave with an unsupervised penalty term.">
-    <meta property="og:image" content="https://chasedenecke.github.io/assets/img/socialMediaPreview.png">
-    <meta property="og:url" content="https://chasedenecke.github.io">
-
-    <meta name="twitter:title" content="Avoiding Side Effects">
-    <meta name="twitter:description" content="Making agents behave with an unsupervised penalty term.">
-    <meta name="twitter:image" content="https://chasedenecke.github.io/assets/img/socialMediaPreview.png">
-    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://avoiding-side-effects.github.io/">
+    <meta property="og:title" content="Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.">
+    <meta property="og:description" content="Making agents behave with an unsupervised penalty term.">
+    <meta property="og:image" content="assets/img/aup-neurips.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://avoiding-side-effects.github.io/">
+    <meta property="twitter:title" content="Avoiding Side Effects in Complex Environments | Making agents behave with an unsupervised penalty term.">
+    <meta property="twitter:description" content="Making agents behave with an unsupervised penalty term.">
+    <meta property="twitter:image" content="assets/img/aup-neurips.png">
   </head>
   <body>
     <header class="page-header" role="banner">

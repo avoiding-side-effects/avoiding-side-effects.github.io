@@ -5,14 +5,12 @@ custom:
     title: Avoiding Side Effects in Complex Environments
     github:
       is_project_page: true
-      repository_url: https://github.com/neale/safelife-k2
+      repository_url: https://github.com/neale/avoiding-side-effects
     publications:
       show_paper: true
       paper_url: https://arxiv.org/abs/2006.06547
     authors: Alex Turner & Neale Ratzlaff, Prasad Tadepalli
 ---
-
-# Abstract
 
 Reward function specification can be difficult, even in simple environments. Rewarding the agent for making a widget may be easy, but penalizing the multitude of possible negative side effects is hard. [In toy environments](https://arxiv.org/abs/1902.09725), Attainable Utility Preservation (AUP) avoided side effects by penalizing shifts in the ability to achieve randomly generated goals. We scale this approach to large, randomly generated environments based on Conway's Game of Life. By preserving optimal value for a single randomly generated reward function, AUP incurs modest overhead while leading the agent to complete the specified task and avoid side effects.
 
@@ -28,7 +26,7 @@ In Conway's Game of Life, cells are alive or dead. Depending on how many live ne
 
 As the environment only rewards pruning red cells or creating gray cells in blue tiles, unpenalized RL agents often make a mess of the green cells (as shown above). The agent should "leave a small footprint" by not disturbing unrelated parts of the state, such as the green cells. Roughly, SafeLife measures side effects as the degree to which the agent disturbs green cells.
 
-For each of the four following tasks, we randomly generate five curricula of 8 levels each. For each curriculum, we randomly sample a test-time trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see our paper.
+For each of the four following tasks, we randomly generate four curricula of 8 levels each. For two runs from each task, we sample a trajectory from the baseline and AUP policy networks. The side-by-side results are shown below; for quantitative results, see [our paper](https://arxiv.org/abs/2006.06547).
 
 ## prune-still-easy
 
