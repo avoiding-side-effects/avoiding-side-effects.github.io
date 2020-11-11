@@ -24,11 +24,11 @@ In Conway's Game of Life, cells are alive or dead. Depending on how many live ne
 <img alt="prune-still-easy, PPO" src="assets/img/explanation.png"/>
 </p>
 
-As the environment only rewards pruning red cells or creating gray cells in blue tiles, unpenalized RL agents often make a mess of the green cells (as shown above). The agent should "leave a small footprint" by not disturbing unrelated parts of the state, such as the green cells. Roughly, SafeLife measures side effects as the degree to which the agent disturbs green cells.
+As the environment only rewards pruning red cells or creating gray cells in blue tiles, unpenalized RL agents often make a mess of the green cells. The agent should "leave a small footprint" by not disturbing unrelated parts of the state, such as the green cells. Roughly, SafeLife measures side effects as the degree to which the agent disturbs green cells.
 
 For each of the four following tasks, we randomly generate four curricula of 8 levels each. For two runs from each task, we randomly sample a trajectory from the baseline and AUP policy networks. We show side-by-side results below; for quantitative results, see [our paper](https://arxiv.org/abs/2006.06547). 
 
-The following demonstrations were uniformly randomly selected; they are not cherry-picked. The original SafeLife reward is shown in green (more is better), while the side effect score is shown in orange (less is better).
+The following demonstrations were uniformly randomly selected; they are not cherry-picked. The original SafeLife reward is shown in green (more is better), while the side effect score is shown in orange (less is better). The "Baseline" condition is trained to only optimize the original SafeLife reward.
 
 ## prune-still-easy
 
